@@ -219,3 +219,20 @@ main {
     background-position: bottom;
     background-repeat: no-repeat;
 }
+.main-exchange-container--updated {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 4px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.main-exchange-container--updated p {
+    margin: 7px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--warm-black);
+}
