@@ -114,6 +114,7 @@ main {
     width: 100%;
     height: auto;
     padding-top: 80px;
+    padding-bottom: 50px;
     text-align: center;
     background-color: var(--off-white);
 }
@@ -286,16 +287,6 @@ main {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product-detail--card .clock {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url("/assets/icons/clock.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 .product--card-title {
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -309,3 +300,68 @@ main {
     line-height: 1.8rem;
     color: #808080;
 }
+    .product-detail--card .clock {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+        background-image: url("/assets/icons/clock.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .product-detail--card .eye {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+        background-image: url("/assets/icons/eye.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .product-detail--card .moneySymbol {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+        background-image: url("/assets/icons/dollar-sign.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .product-detail--card .check {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+        background-image: url("/assets/icons/check-circle.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+/* SECTION 3 */
+    .bitcoin-img-container {
+        width: 100%;
+        min-width: 320px;
+        height: 50vh;
+        text-align: center;
+        background-image: url("/assets/img/bitcoinbaby2x.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .bitcoin-img-container h2 {
+        padding-top: 60px;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.6rem;
+        color: var(--just-white);
+    }
+
+
+
+/* SECTION 4 */
