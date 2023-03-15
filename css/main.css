@@ -25,7 +25,6 @@
 html {
     font-size: 62.5%; 
     font-family: 'DM Sans', sans-serif;
-
 }
 
 
@@ -76,7 +75,7 @@ header img {
 
 .header--title-container .header--buttom {
     position: absolute;
-    left: calc(50% - 128px);
+    left: calc(50% - 115px);
     display: block;
     width: 229px;
     height: auto; /* MIRAR! YA QUE DEBE SER DE 48PX */
@@ -109,6 +108,9 @@ main {
     height: auto;
     background-color: var(--just-white);
 }
+
+
+
 /* SECTION 1 */
 .main-exchange-container {
     width: 100%;
@@ -237,6 +239,10 @@ main {
     font-family: 'Inter', sans-serif;
     color: var(--warm-black);
 }
+
+
+
+/* SECTION 2 */
 .main-product-detail {
     position: relative;
     width: 100%;
@@ -368,6 +374,117 @@ main {
     box-sizing: border-box;
     width: 100%;
     min-width: 320px;
-    padding: 70px;
+    padding-bottom: 70px;
     text-align: center;
+    background-color: var(--off-white);
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+.plans--title p {
+    padding-top: 24px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--gray);
+}
+
+/* cards */
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 60%;
+    min-width: 190px; /* need to be 230 (testing) */
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 10px 0;
+    padding: 0 16px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recommended {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 31px;
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700 ;
+    line-height: 1.5rem;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+}
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan-card--price {
+padding: 5px 0;
+font-size: 5.3rem;
+font-weight: 700;
+line-height: 5.3rem;
+letter-spacing: -0.4rem;
+color: var(--black);
+}
+.plan-card--price span {
+    position: relative;
+    top: -28px;
+    left: -6px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.plan-card--saving {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--gray);
+}
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+}
+
+.plan-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/assets/icons/orange-right-arrow.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
 }
