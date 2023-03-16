@@ -407,7 +407,6 @@ main {
 .plans-container--slider{
     display: flex;
     height: 312px;
-    /* padding: 0 60px; */
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -420,7 +419,7 @@ main {
     max-width: 300px;
     height: 250px;
     margin: 40px 10px 0;
-    padding: 0 16px;
+    padding: 0 20px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
@@ -515,6 +514,13 @@ color: var(--black);
 }
 .plan-weekly--buttom span {
     background-image: url("../assets/icons/right-arrow-gray.svg");
+}
+
+.first-card {
+margin-left: 60px;
+}
+.last-card {
+margin-right: 60px;
 }
 
 
