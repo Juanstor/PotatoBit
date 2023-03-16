@@ -383,7 +383,7 @@ main {
     min-width: 288px;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .plans--title h2 {
     padding-top: 50px;
@@ -403,7 +403,8 @@ main {
 /* cards */
 .plans-container--slider{
     display: flex;
-    height: 316px;
+    height: 312px;
+    /* padding: 0 60px; */
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -415,13 +416,13 @@ main {
     min-width: 190px; /* need to be 230 (testing) */
     max-width: 300px;
     height: 250px;
-    margin: 50px 10px 0;
+    margin: 40px 10px 0;
     padding: 0 16px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
-.recommended {
+.plans-card--main-title {
     position: absolute;
     top: -15px;
     left: calc(50% - 60px);
@@ -433,8 +434,16 @@ main {
     font-weight: 700 ;
     line-height: 1.5rem;
     color: var(--just-white);
-    background-color: var(--bitcoin-orange);
     border-radius: 8px;
+}
+.plan-annual--bg {
+    background-color: var(--bitcoin-orange);
+}
+.plan-monthly--bg {
+    background-color: var(--secondary-blue);
+}
+.plan-weekly--bg {
+    background-color: var(--gray);
 }
 .plan-card--title {
     padding-top: 30px;
@@ -474,27 +483,43 @@ color: var(--black);
     line-height: 1.8rem;
     color: var(--warm-black);
     background-color: var(--off-white);
-    border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
 }
-
+.plan-annual--buttom {
+    border: 2px solid var(--bitcoin-orange);
+}
+.plan-monthly--buttom {
+    border: 2px solid var(--secondary-blue);    
+}
+.plan-weekly--buttom {
+    border: 2px solid var(--gray);
+}
 .plan-card--ca span{
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("../assets/icons/orange-right-arrow.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: text-top;
 }
 
+.plan-annual--buttom span {
+    background-image: url("../assets/icons/right-arrow-orange.svg");
+}
+.plan-monthly--buttom span {
+    background-image: url("../assets/icons/right-arrow-blue.svg");
+}
+.plan-weekly--buttom span {
+    background-image: url("../assets/icons/right-arrow-gray.svg");
+}
 
 
 /* FOOTER */
 footer {
     display: flex;
     width: 100%;
+    min-width: 320px;
     height: 150px;
     background-color: var(--bitcoin-orange);
 }
