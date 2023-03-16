@@ -12,3 +12,11 @@
 .plans-container--slider {
     justify-content: center;
 }
+.main-tables-container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.plans-container--slider{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

@@ -153,18 +153,25 @@ main {
 }
 /* table */
 .main-tables-container {
-    /* display: flex;
-    height: 312px;
+    display: flex;
+    height: 360px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity; */
+    scroll-snap-type: x proximity;
 }
 .main-currency-table {
-    width: 70%;
+    width: 65%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 5px;
+}
+.main-currency-table:nth-child(1) {
+    margin-left: 50px;
+}
+.main-currency-table:nth-child(2) {
+    margin-right: 50px;
 }
 .main-currency-table--title {
     text-align: center;
@@ -238,11 +245,12 @@ main {
     height: 30px;
     margin: 0 auto;
     margin-top: 15px;
-    padding: 4px;
+    padding: 1px;
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
 .main-exchange-container--updated p {
+
     margin: 7px;
     font-size: 1.2rem;
     font-weight: 300;
